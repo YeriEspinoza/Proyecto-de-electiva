@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tarjeta tipo twitter</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f8fa; /* Color de fondo similar al de Twitter */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .twitter-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .user-info img {
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .user-details {
+      flex-grow: 1;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    p {
+      margin: 5px 0;
+      color: #657786; /* Color de texto similar al de Twitter */
+    }
+
+    .user-stats {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      color: #657786;
+    }
+
+    .tweet-content {
+      margin: 15px 0;
+      color: #14171a; /* Color de texto principal similar al de Twitter */
+    }
+
+    .tweet-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #657786;
+      margin-top: 15px;
+    }
+
+    .tweet-actions a {
+      text-decoration: none;
+      color: #1da1f2; /* Color de enlaces similar al de Twitter */
+      font-weight: bold;
+    }
+
+    .tweet-actions a:hover {
+      text-decoration: underline;
+    }
+
+    .follow-button {
+      background-color: #1da1f2;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-left: auto;
+    }
+
+    .follow-button:hover {
+      background-color: #0d91e8;
+    }
+  </style>
+</head>
+<body>
+  <div class="twitter-card">
+    <div class="user-info">
+      <img src="mariposa.jpeg" alt="Foto de perfil" width="70" height="70">
+      <div class="user-details">
+        <h2>Yeriddets Espinoza</h2>
+        <p>@yeriespinoza</p>
+      </div>
+      <button class="follow-button">Seguir</button>
+    </div>
+
+    <p class="tweet-content">Me gustaria acabar proyecto ya.</p>
+
+    <div class="user-stats">
+      <p>Seguidores: 150mil</p>
+      <p>Siguiendo: 145</p>
+    </div>
+
+    <div class="tweet-actions">
+      <a href="#">Me gusta</a>
+      <a href="#">Retwittear</a>
+      <a href="#">Comentar</a>
+    </div>
+  </div>
+</body>
+</html>
